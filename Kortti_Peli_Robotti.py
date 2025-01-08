@@ -60,25 +60,36 @@ def decide_action(status):
 
 
 def play_game():
-    """Pelaa peli alusta loppuun."""
+    """Pelaa pelin loppuun asti."""
     game_id, status = create_game()
     print(f"Game {game_id} started!")
 
-    while not status["finished"]:
+    while not status.get("finished", True):  # Ensure 'finished' exists
+        current_card = status.get("card")
+        current_money = status.get("money")
+
+        if current_card is None or current_money is None:
+            print("Unexpected status format:", status)
+            break
+
         take_card = decide_action(status)
         status = take_action(game_id, take_card)
-        print(f"Turn played. Current card: {status['card']}, Coins on card: {status['money']}")
+        print(f"Turn played. Current card: {current_card}, Coins on card: {current_money}")
 
-    #  Laske lopulliset pisteet
-    final_scores = [
-        {"name": player["name"], "score": calculate_points(player)}
-        for player in status["players"]
-    ]
-    final_scores.sort(key=lambda x: x["score"])
-    print("\nGame finished! Final scores:")
-    for score in final_scores:
-        print(f"{score['name']}: {score['score']} points")
+    # Laske lopulliset pisteet
+    if "players" in status:
+        final_scores = [
+            {"name": player["name"], "score": calculate_points(player)}
+            for player in status["players"]
+        ]
+        final_scores.sort(key=lambda x: x["score"])
+        print("\nGame finished! Final scores:")
+        for score in final_scores:
+            print(f"{score['name']}: {score['score']} points")
+    else:
+        print("Unexpected end of game status:", status)
 
 
 if __name__ == "__main__":
     play_game()
+
