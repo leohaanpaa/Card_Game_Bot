@@ -64,7 +64,7 @@ def play_game():
     game_id, status = create_game()
     print(f"Game {game_id} started!")
 
-    while not status.get("finished", True):  # Ensure 'finished' exists
+    while not status.get("finished", True):  # Varmistaa että peli on loppunut
         current_card = status.get("card")
         current_money = status.get("money")
 
