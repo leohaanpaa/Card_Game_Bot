@@ -6,7 +6,18 @@ API_TOKEN = "6cb67a9a-eabd-4a19-896c-554f4c9df6f7"
 BASE_URL = "https://koodipahkina.monad.fi/api"
 HEADERS = {"Authorization": f"Bearer {API_TOKEN}"}
 
+if __name__ == "__main__":
+    num_games = 100
+    results = []
 
+    for i in range(num_games):
+        print(f"Starting game {i + 1}...")
+        try:
+            game_id, status = create_game()
+            play_game_improved()
+            print(f"Game {i + 1} finished!\n")
+        except Exception as e:
+            print(f"Game {i + 1} encountered an error: {e}")
 def create_game():
     """Luo uuden pelin"""
     response = requests.post(f"{BASE_URL}/game", headers=HEADERS)
