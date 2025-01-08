@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13064d94-27a8-4015-a5b3-20297df817e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PyCharm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kortti_Peli_Robotti.py" afterDir="false" />
+    <list default="true" id="13064d94-27a8-4015-a5b3-20297df817e5" name="Changes" comment="Start of the project Kortti_Peli_Robotti.py">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "leohaanpaa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/leohaanpaa/PyCharm_Projects",
+    "accountId": "7818da5e-decd-4f07-a55b-921756c8d9f7"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -39,9 +46,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.Kortti_Peli_Robotti.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": []
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -60,6 +73,30 @@
       <option name="presentableId" value="Default" />
       <updated>1736348709026</updated>
     </task>
+    <task id="LOCAL-00001" summary="Start of the project Kortti_Peli_Robotti.py">
+      <option name="closed" value="true" />
+      <created>1736349275296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736349275296</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Start of the project Kortti_Peli_Robotti.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start of the project Kortti_Peli_Robotti.py" />
   </component>
 </project>
